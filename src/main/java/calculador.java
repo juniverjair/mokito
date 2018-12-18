@@ -1,5 +1,3 @@
-package mockito;
-
 public class calculador implements operaciones {
 
 	@Override

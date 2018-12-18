@@ -1,4 +1,4 @@
-package mockito;
+
 
 public interface operaciones {
 	int sumar(int a, int b);

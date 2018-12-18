@@ -1,4 +1,4 @@
-package mockito;
+
 
 import java.util.Scanner;
 
@@ -22,7 +22,10 @@ public class main {
 		
 		switch (opcion) {
         case "1":
+        	
+        	
         	System.out.println("Ingrese un numero: ");
+        	
         	int as = sc.nextInt();
         	 
         	System.out.println("Ingrese un numero: ");
