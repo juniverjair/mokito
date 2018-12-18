@@ -5,6 +5,7 @@ public interface operaciones {
 	int restar(int a, int b);
 	int multiplicar(int a, int b);
 	int dividir(int a, int b);
+	int exp(int a, int b);
 	
 
 }
