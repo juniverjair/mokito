@@ -18,7 +18,7 @@ public class calculador implements operaciones {
 	@Override
 	public int multiplicar(int a, int b) {
 		int resultado = 0;
-		for (int i = 0; i != b; ++i) {
+		for (int i = 0; i < b; i++) {
 			resultado = sumar(resultado,a);
 		}
 		return resultado;
@@ -34,7 +34,14 @@ public class calculador implements operaciones {
 		return resultado;
 	}
 
-
+	@Override
+	public int exp(int a, int b) {
+		int resultado = 1;
+		for (int i = 0; i < b; i++) {
+			resultado = multiplicar(resultado,a);
+		}
+		return resultado;
+	}
 
 
 }
