@@ -4,12 +4,13 @@ import static org.junit.Assert.*;
 
 
 import org.junit.Test;
+import static org.mockito.Mockito.*;
 
 public class calculadoraTest {
 
 	
 	@Test
-	public void test1() {
+	public void sumar() {
 		calculador c = new calculador();
 		
 	    try {
@@ -22,12 +23,37 @@ public class calculadoraTest {
 	}
 	
 	@Test
-	public void test2() {
+	public void dividir() {
 		calculador c = new calculador();
 		
 	    try {
-	    	int resultadoReal = c.dividir(15, 5);
-		    int resultadoEsperado = 3;
+	    	int resultadoReal = c.dividir(4, 2);
+		    int resultadoEsperado = 2;
+	    	assertEquals(resultadoEsperado, resultadoReal);
+	    } catch (Exception e) {
+	    	fail("Excepcion");
+	    }
+	}
+	
+	@Test
+	public void restar() {
+		calculador c = new calculador();
+		
+	    try {
+	    	int resultadoReal = c.restar(5, 3);
+		    int resultadoEsperado = 2;
+	    	assertEquals(resultadoEsperado, resultadoReal);
+	    } catch (Exception e) {
+	    	fail("Excepcion");
+	    }
+	}
+	
+	@Test
+	public void multiplicacion() {
+		calculador c = new calculador();
+	    try {
+	    	int resultadoReal = c.multiplicar(2, 3);
+		    int resultadoEsperado = 6;
 	    	assertEquals(resultadoEsperado, resultadoReal);
 	    } catch (Exception e) {
 	    	fail("Excepcion");

@@ -12,14 +12,19 @@ public class main {
 		
 		Scanner sc = new Scanner(System.in);
 		
+		String opcion = "1";
+		
+		while (opcion != "0") {
+		
+		
 		System.out.println(" * * * Calculador * * *");
 		System.out.println("\t 1) Sumar");
 		System.out.println("\t 2) Restar");
 		System.out.println("\t 3) Multiplicar");
 		System.out.println("\t 4) Dividir");
-		System.out.println("\t 5) Potencia");
+
 		
-		String opcion = sc.nextLine();
+		opcion = sc.nextLine();
 		
 		switch (opcion) {
         case "1":
@@ -61,19 +66,12 @@ public class main {
         	
         	System.out.println("El resultado de la division es " + c.dividir(ad, bd));
         	break;
-        case "5":  
-        	System.out.println("Ingrese un numero: ");
-        	int prod1 = sc.nextInt();
-        	 
-        	System.out.println("Ingrese un numero: ");
-        	int prod2 = sc.nextInt();
-        	
-        	System.out.println("El potencia es " + c.exp(prod1, prod2));
-        	break;
+
         default:
         	System.out.println("Opcion no disponible");
         	break;
-		}	
+		}
+		}
 
 	}
 
